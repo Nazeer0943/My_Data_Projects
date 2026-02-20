@@ -6,7 +6,7 @@ The goal of this project was to take a highly inconsistent, "messy" retail datas
 ## 🛠️ Skills Demonstrated
 - **Data Cleaning:** Handled missing values (NaN), inconsistent date formats, and case-sensitivity issues using Python & Pandas.
 - **Data Integrity:** Standardized regional and category data to ensure accurate grouping.
-- **Analysis:** Extracted business KPIs including Total Revenue and Category Performance.
+- **Analysis:** Extracted business KPIs, including Total Revenue and Category Performance.
 
 ## 📊 Key Business Insights
 - **Total Revenue:** $2,326.50
@@ -24,6 +24,7 @@ The goal of this project was to take a highly inconsistent, "messy" retail datas
 - **High Volume Days:** Tuesday and Sunday ($500.00 avg).
 - **Low Volume Days:** Saturday ($37.63 avg).
 - **Insight:** Higher-value items are purchased during the week and on Sundays, while Saturdays are dominated by small-ticket "basket" items.
+- ![Weekly Sales Trend](sales_trend.png)
 
 ### 2. Regional Deep-Dive (Electronics)
 - **Top Region:** NORTH ($1,300.00).
