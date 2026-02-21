@@ -28,3 +28,13 @@ if not merged_data.empty:
     print(merged_data[['customer_name', 'membership_level', 'amount_spent']].head())
 else:
     print("Zero rows matched. Double-check your CSV data!")
+# Create the summary: Group by level and sum the spending
+revenue_summary = merged_data.groupby('membership_level')['amount_spent'].sum().sort_values(ascending=False)
+
+# Optional: Print it so you can see it in the terminal
+print("\n--- Revenue Summary ---")
+print(revenue_summary)
+
+# Save the summary to the cleaned_data folder
+revenue_summary.to_csv('../cleaned_data/loyalty_revenue_report.csv')
+print("\n✅ Final report saved to cleaned_data/loyalty_revenue_report.csv")
